@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700&family=Lobster&family=Oswald:wght@200..700&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #c61c1c;
+            color: white;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            margin: 0 20px;
+        }
+
+        .search-bar input {
+            flex-grow: 1;
+            padding: 5px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .list div {
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <i class="fa-brands fa-youtube"></i>
+            <h1>YouTube</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div class="right-header">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <button id="sign">
+                <i class="fa-regular fa-circle-user"></i>
+                Sign in
+            </button>
+        </div>
+    </header>
+    <section class="list">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <h4>Home</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-play"></i>
+            <h4>Shorts</h4>
+        </div>
+        <div>
+            <i class="fa-brands fa-square-youtube"></i>
+            <h4>Subscriptions</h4>
+        </div>
+        <div>
+            <i class="fa-regular fa-circle-user"></i>
+            <h4>You</h4>
+        </div>
+        <div>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h4>History</h4>
+        </div>
+    </section>
+    <main>
+        <h2>Recommended Videos</h2>
+         <ol>
+            <li>
+                <div>
+                    <video class="my-video" controls>
+                        <source src="Enrique Iglesias - Maybe - LYRICS(480P).mp4(480P).mp4" type="video/mp4">
+                      </video>
+                      
+                      <style>
+                        .my-video {
+                          width: 450px;
+                          height: px;
+                        }
+                      </style>
+                      <h3>Enrique Iglesias - Maybe - LYRICS</h3>
+                </div>
+    
+            </li>
+            <li>
+                <div>
+                    <video class="my-video" controls>
+                        <source src="Colbie Caillat - Bubbly (Lyrics)(720P_HD).mp4" type="video/mp4">
+                      </video>
+                      
+                      <style>
+                        .my-video {
+                          width: 300px;
+                          height: px;
+                        }
+                      </style>
+                      <h3>Colbie Caillat - Bubbly (Lyrics)</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <video class="my-video" controls>
+                        <source src="John Denver ♥ Take Me Home_ Country Roads  (The Ultimate Collection)  with Lyrics(480P).mp4" type="video/mp4">
+                      </video>
+                      
+                      <style>
+                        .my-video {
+                          width: 300px;
+                          height: px;
+                        }
+                      </style>
+                      <h3>John Denver ♥ Take Me Home_ Country Roads  (The Ultimate Collection)  with Lyrics</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <video class="my-video" controls>
+                        <source src="Shayne Ward - No Promises (Lyrics)(720P_60FPS).mp4" type="video/mp4">
+                      </video>
+                      
+                      <style>
+                        .my-video {
+                          width: 300px;
+                          height: px;
+                        }
+                      </style>
+                      <h3>Shayne Ward - No Promises (Lyrics)</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <video class="my-video" controls>
+                        <source src="Some broken hearts never mend - Don Williams (lyrics video)(360P).mp4" type="video/mp4">
+                      </video>
+                      
+                      <style>
+                        .my-video {
+                          width: 300px;
+                          height: px;
+                        }
+                      </style>
+                      <h3>Some broken hearts never mend - Don Williams (lyrics video)(360P).mp4</h3>
+                </div>
+            </li>
+         </ol>
+    </main>
+    <script>
+        // Example of a feature: Alert for sign-in button
+        document.getElementById('sign').addEventListener('click', () => {
+            alert('Sign-in feature coming soon!');
+        });
+    </script>
+</body>
+</html>
